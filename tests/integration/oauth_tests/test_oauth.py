@@ -17,7 +17,7 @@ CREATE OR REPLACE SECURITY INTEGRATION DBT_INTEGRATION_TEST_OAUTH
 
 Every month (or any amount <90 days):
 
-Run `select SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('DBT_INTEGRATION_TEST_OAUTH');`
+Run `select SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('DBT_OAUTH_TESTING');`
 
 The only row/column of output should be a json blob, it goes (within single
 quotes!) as the second argument to the server script:
